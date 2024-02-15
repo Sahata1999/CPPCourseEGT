@@ -132,8 +132,12 @@ void Date::helpDecrement() {
     }
 }
 
-// overloaded output operator
 ostream& operator<<(ostream& output, const Date& d) {
     static std::string monthName[13] = { "", "January", "February",
        "March", "April", "May", "June", "July", "August",
        "September", "October", "November", "December" };
+
+    output << d.day << ' ' << monthName[d.month] << ", " << d.year;
+    return output; 
+
+}
