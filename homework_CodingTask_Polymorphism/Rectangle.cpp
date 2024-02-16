@@ -2,7 +2,7 @@
 #include <iostream>
 
 Rectangle::Rectangle(string color, double width, double height) : Shape(color) {
-	this->color = color;
+	
 	this->width = width;
 	this->height = height;
 }

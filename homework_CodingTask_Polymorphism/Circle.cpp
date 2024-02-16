@@ -2,7 +2,7 @@
 #include <iostream>
 
 Circle::Circle(string color, double radius) : Shape(color) {
-	this->color = color;
+	
 	this->radius = radius;
 }
 
